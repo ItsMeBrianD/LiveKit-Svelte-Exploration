@@ -106,3 +106,5 @@ dist
 .svelte-kit/
 
 secret/
+
+build/
