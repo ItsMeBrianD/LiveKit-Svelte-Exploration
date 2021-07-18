@@ -13,5 +13,6 @@ To get it set up, you only need to do a few short setup steps.
    1. Place your secret key into `/secret/lk_access_key`
    1. Place both into `/server-config.yml` as a key value pair for `keys` (i.e. `access_token: secret_key`)
 1. Run `docker-compose up`, and connect to the instance at [localhost:3000](localhost:3000)
+   - If you are going to be changing the svelte code, you can use `docker-compose up sfu` and `npm run dev` to start the sfu in docker, and the frontend in dev mode.
 
 1. If you are going to be connecting to a local instance (i.e. from one machine to another via LAN), you will need to configure your browser to allow [the browser to access your microphone and camera](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia) on a *specific* insecure host. For Google Chrome, you can do so with [this](brave://flags/#unsafely-treat-insecure-origin-as-secure) flag (it should look like `http://x.x.x.x:3000`). To read more about why this step is needed, the chromium project has a good writeup on why they made the restriction [here](https://www.chromium.org/Home/chromium-security/deprecating-powerful-features-on-insecure-origins).
