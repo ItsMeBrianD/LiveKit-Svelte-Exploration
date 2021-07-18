@@ -108,3 +108,5 @@ dist
 secret/
 
 build/
+
+server-config.yml

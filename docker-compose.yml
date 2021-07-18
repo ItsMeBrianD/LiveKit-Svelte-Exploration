@@ -1,0 +1,15 @@
+version: '3.4'
+services: 
+    ui:
+        build: .
+        ports:
+            - 3000:3000
+    sfu:
+        image: livekit/livekit-server
+        ports:
+            - 7880:7880
+            - 7881:7881
+            - 7882:7882/udp
+        volumes:
+            - './server-config.yml:/config.yml'
+        command: --dev --node-ip=<your-host-ip> --config=/config.yml
