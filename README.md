@@ -1,4 +1,4 @@
-# Livekit + Svelte = 🫀
+# Livekit + Svelte = 🦾
 
 This repo contains a small VOIP application built using [SvelteKit](https://kit.svelte.dev), [LiveKit](https://livekit.io) and [TailwindCSS](https://tailwindcss.com). 
 
