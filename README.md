@@ -4,7 +4,7 @@ This repo contains a small VOIP application built using [SvelteKit](https://kit.
 
 To get it set up, you only need to do a few short setup steps.
 
-1. Place the ip for the host you are running on into [`docker-compose.yml`](./docker-compose.yml)
+1. Place the ip for the host you are running on into [`docker-compose.yml`](./docker-compose.yml) and [`config.json`](./src/config.json)
    - (Hint: it goes in the `command` property for the `sfu` `service`)
 1. Generate an access token / secret pair
    1. At time of writing, this can be done with the following command:  
